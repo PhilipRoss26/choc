@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chocolate Candy Store</title>
+    <style>
+      .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        border: 2px solid #7c4700;
+      }
+      .card {
+        flex: 0 0 200px;
+        background-color: cream;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid black;
+        position: relative;
+      }
+      .card img {
+        width: 100px;
+        height: auto;
+      }
+      .hidden {
+        display: none;
+      }
+      button {
+        margin: 10px;
+        background-color: #997950;
+        color: rgb(239, 208, 162);
+        font-size: larger;
+      }
+      h1 {
+        background-color: rgb(239, 208, 162);
+        color: #3B270c;
+        text-align: center;
+        font-size: xx-large;
+      }
+    </style>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="game.js"></script>
+  </head>
+  <body>
+    <h1>Chocolate Candy Store</h1>
+    <button type="button" onclick="pickRandomSample()">Pick Random Free Sample</button>
+    <button type="button" onclick="toggleContent()">Show/Hide Calories & Content</button>
+    <div class="wrapper">
+      <!-- Cards for the chocolate candies -->
+      <div class="card" id="card1">
+        <img src="plain_milk.jpg" alt="Plain Milk">
+        <h3>Plain Milk</h3>
+        <p class="hidden">110 calories, ingredients: cocoa butter, milk, sugar</p>
+      </div>
+      <div class="card" id="card2">
+        <img src="plain_dark.jpg" alt="Plain Dark">
+        <h3>Plain Dark</h3>
+        <p class="hidden">100 calories, ingredients: cocoa butter, milk, sugar</p>
+      </div>
+      <div class="card" id="card3">
+        <img src="plain_hybrid.jpg" alt="Plain Dark">
+        <h3>Plain Hybrid</h3>
+        <p class="hidden">105 calories, smooth milk chocolate and dark chocolate side by side, ingredients: cocoa butter, milk, sugar  </p>
+      </div>
+      <div class="card" id="card4">
+        <img src="nutter_butter.jpg" alt="Plain Dark">
+        <h3>Nutter Butter</h3>
+        <p class="hidden">130 calories, smooth milk chocolate, peanut butter filling, ingredients: cocoa butter, milk, sugar</p>
+      </div>
+      <div class="card" id="card5">
+        <img src="baileys_cup.jpg" alt="Plain Dark">
+        <h3>Bailey's Cup</h3>
+        <p class="hidden">90 calories, smooth milkchocolate with Bailey's Irish Cream filling, ingredients: cocoa butter, milk, sugar, Bailey's Cream filling</p>
+      </div>
+      <div class="card" id="card6">
+        <img src="rum_barrel.jpg" alt="Plain Dark">
+        <h3>Rum Barrel</h3>
+        <p class="hidden">110 calories, smooth dark chocolate with rum-coconut filling, ingredients: cocoa butter, milk, sugar, rum, coconut</p>
+      </div>
+      <div class="card" id="card7">
+        <img src="orange_fondant.jpg" alt="Plain Dark">
+        <h3>Orange Fondant</h3>
+        <p class="hidden">125 calories, dark chocolate with orange fondant filling, ingredients: cocoa butter, milk, sugar, orange cream, orange zest</p>
+      </div>
+      <div class="card" id="card8">
+        <img src="cappuccino_cup.jpg" alt="Plain Dark">
+        <h3>Cappuccino Cuo</h3>
+        <p class="hidden">130 calories, dark chocolate with coffee cream filling, ingredients: cocoa butter, milk, sugar, coffee-vanilla cream, grated coffee beans</p>
+      </div>
+      <div class="card" id="card9">
+        <img src="pistachio_diamond.jpg" alt="Plain Dark">
+        <h3>Pistachio Diamond Ring</h3>
+        <p class="hidden">140 calories, milk chocolate, almond butter filling, large pistachio, filling: cocoa butter, milk, sugar, nut butter, pistachio</p>
+      </div>
+      <div class="card" id="card10">
+        <img src="toffee_crunch.jpg" alt="Plain Dark">
+        <h3>Toffee Crunch</h3>
+        <p class="hidden">130 calories, dark chocolate, soft toffee filling, rock salt and peanut brittle, ingredients: cocoa butter, milk, sugar, toffee, salt, toffee brittle</p>
+      </div>
+    </div>
+  </body>
+</html>
